@@ -1,0 +1,449 @@
+@import url("font-family: 'Oswald', sans-serif;");
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    /* background-color: rgb(248, 248, 248); */
+
+    height: 100%;
+
+}
+
+.container {
+    display: flex;
+    background-image: url("back2.jpg");
+    background-size: cover;
+    height: 66vw;
+    width: 104vw;
+
+
+}
+
+.infoContainer {
+
+
+    padding-top: 10px;
+    padding-left: 300px;
+    height: 80vh;
+    width: 45vw;
+    display: flex;
+    padding-top: 90px;
+
+
+    justify-content: space-around;
+}
+
+.social {
+    font-size: 40px;
+
+}
+
+.fa-brands {
+    color: white;
+    padding: 2px;
+    padding-bottom: 10px;
+}
+
+.intro {
+    margin-left: 44px;
+
+
+}
+
+.aboutItem {
+    height: 36vw;
+    width: 52vw;
+    display: flex;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 25px;
+    padding-top: 80px;
+    padding-left: 250px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.aboutItem p {
+    font-size: 20px;
+    width: 46 vw;
+    font-family: 'Kanit', sans-serif;
+    margin: 20px;
+    word-spacing: 0.5px;
+
+    padding-right: 100px;
+
+}
+
+.aboutItem h2 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+.skillsContainer {
+    margin-top: 5px;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding: 12px;
+    padding-left: 50px;
+}
+
+.skillItem {
+    display: flex;
+    /* align-items: center; */
+    margin-left: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.skillItem h3 {
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+
+.sidebar {
+    background-color: rgba(12, 12, 12, 0.66);
+    position: absolute;
+
+    width: 250px;
+    font-family: 'Oswald', sans-serif;
+
+    height: 66vw;
+    left: 0;
+    top: 0;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+}
+
+
+.sidebar nav {
+    padding: 40px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sidebar nav li :hover {
+    color: rgb(255, 255, 255);
+    padding: 6px 3px 6px 3px;
+    /* margin: 0 1rem; */
+    background-color: rgb(35, 34, 34);
+    cursor: pointer;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebaricon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 1px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+#opensidebarMenu {
+    margin-left: -30px;
+
+}
+
+.spinner {
+    margin-top: 5px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s;
+
+
+}
+
+.spinner.middle,
+.spinner.bottom {
+    margin-top: 3px;
+}
+
+
+
+#opensidebarMenu:checked~.sidebar {
+    transform: translateX(0px);
+}
+
+#opensidebarMenu:checked~.sidebaricon>.spinner.middle {
+    opacity: 0;
+}
+
+#opensidebarMenu:checked~.sidebaricon>.spinner.top {
+    transform: rotate(130deg);
+    margin-top: 12.5px;
+}
+
+#opensidebarMenu:checked~.sidebaricon>.spinner.bottom {
+    transform: rotate(-130deg);
+    margin-top: -12px;
+}
+
+
+
+.Hello {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.Name {
+    font-size: 44px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.about {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.profil {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.Button button {
+    width: 150px;
+    padding-top: 40px;
+    font-size: 16px;
+    padding: 14px;
+    color: black;
+    font-weight: bold;
+    border-color: black;
+    cursor: pointer;
+    border-width: 2px;
+    background-color: rgb(236, 241, 248);
+    border-radius: 5px;
+}
+
+.Button button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(188, 221, 247);
+}
+
+.serviceContainer {
+    width: 40%;
+    height: 100vh;
+    padding-left: 20%;
+    padding-top: 5%;
+    color: white;
+}
+
+.serviceContainer h1 {
+
+    padding-left: 32vh;
+    padding-top: 10%;
+    margin-bottom: 50px;
+    font-weight: 800;
+    position: relative;
+}
+
+.serviceContainer h1::after {
+    content: '';
+    background-color: #f9f7f795;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -8px;
+    left: 49.5%;
+    transform: translateX(-50%);
+
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.services {
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+
+}
+
+.services i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f9f7f7b1;
+}
+
+.services h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.services:hover {
+    background: #3b3b3de7;
+    color: #fff;
+    transform: scale(1.05);
+
+}
+
+.services:hover i {
+    color: white;
+}
+
+.contactform {
+    /* background-color: white; */
+    padding-top: 100px;
+    padding-left: 360px;
+    padding-right: 150px;
+    color: white;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+
+
+
+}
+
+.contactform form div {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactform form div input {
+    width: 380px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    padding: 3px;
+
+
+}
+
+.contactform button {
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.contactform h1 {
+    font-size: 27px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+
+.contactform button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+.contactform button:hover {
+    color: rgb(255, 255, 255);
+    background: rgba(26, 26, 26, 0.745);
+
+}
+
+.portfolioContainer {
+    width: 45%;
+    height: 100vh;
+    padding-left: 20%;
+    padding-top: 8%;
+    color: white;
+
+}
+
+
+
+
+.portfolioRow {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    grid-gap: 8px;
+
+
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.portfolioContainer h1 {
+    padding-left: 32vh;
+
+    margin-bottom: 30px;
+    font-weight: 800;
+    position: relative;
+
+}
+
+.portfolioContainer h1::after {
+    content: '';
+    background-color: #f9f7f795;
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    bottom: -8px;
+    left: 39.5%;
+    transform: translateX(-50%);
+}
+
+.portfolioRow i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f9f7f7b1;
+}
+
+.portfolioRow:hover {
+    background: #3b3b3de7;
+    color: #fff;
+    transform: scale(1.05);
+
+}
+
+.portfolioRow:hover i {
+    color: white;
+}
